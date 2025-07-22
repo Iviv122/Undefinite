@@ -20,6 +20,13 @@ public class Movement : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
     private float direction = 0;
     private bool start = false;
+    public Vector2 MoveDir
+    {
+        get
+        {
+            return rb.linearVelocity;
+        }
+    }
     void Awake()
     {
     }
